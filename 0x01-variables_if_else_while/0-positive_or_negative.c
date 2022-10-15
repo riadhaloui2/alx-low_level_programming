@@ -7,15 +7,11 @@
 /* more headers goes there */
 
 
-
- /**
-  *
-  * main - Entry point
-  *
-  * Description: 'the program's description'
-  *
-  * Return: Always 0 (Success)
-  */
+/**
+ * main - Entry point
+ * Description: print if the number is positive or negative
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 		int n;
