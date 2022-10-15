@@ -9,7 +9,12 @@
 
 
 /* betty style doc for function main goes there */
-/* Description: if statement */
+/*
+ * main - Entry point
+ *
+ * Description :if statement
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 		int n;
