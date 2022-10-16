@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point                                                            *Description: put the lower
+ * main - Entry point 
+ *Description: put the lower
  *with upper case alphabet
- *Return: Always 0 (Success)                                                     *
- */
+ *Return: Always 0 (Success)                                                     */
 
 
 
@@ -12,7 +12,7 @@ int main(void)
 
 {
 
-	        int ch;
+		int ch;
 
 		for (ch = 'a' ; ch <= 'z' ; ch++)
 			putchar(ch);
