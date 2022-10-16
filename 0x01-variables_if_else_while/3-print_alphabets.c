@@ -1,13 +1,9 @@
 nclude <stdio.h>                                                                                                          
 
-/**                                                                                                                         
- *  * main - Entry point                                                                                                       
- *
- *   * Description: put the lower case alphabet                                                                                 
- *
- *    * Return: Always 0 (Success)                                                                                               
- *
- *     */                                                                                                                         
+/**                                           
+ * main - Entry point                                                            *Description: put the lower with upper case alphabet
+ *Return: Always 0 (Success)                                                     *
+ */                                                
 
                                                                                                                             
 
