@@ -5,21 +5,26 @@
  * Description: print hexa numbers
  * Return: Always 0 (success)
  */
+int main(void)
+{
+	int n;
+	for (n = 0; n <= 9; n++)
+	{
+		putchar (n +'0');
+		putchar ('\t');
+
+		if (n != 0)
+			putchar (',');
+	
+	}
+
+	putchar ('\n');
 
 
-int main(void) {
-		int n;                                                                                                          
-		for (n = 0; n <= 9; n++)
-		{                           
-			putchar (n +48);                     
-			putchar ("\t");
-				        
-			if (n != 9 )
-			{
-				putchar (',');								}
-		} 
-			          
-			                                                                                                          
-		putchar ('\n'); 
-		return (0);
+
+
+
+
+
+return (0);
 }
