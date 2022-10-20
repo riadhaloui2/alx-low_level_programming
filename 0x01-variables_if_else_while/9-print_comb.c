@@ -12,8 +12,8 @@ int main(void)
 
 	for (n = 0; n <= 8; n++){
 		putchar (n % 10 + '0');
-		putchar (" ,");
-	}	
+		putchar (" ");
+	}	putchar (',');
 	putchar (n % 9 + '0');	
 	putchar ('\n');
 
