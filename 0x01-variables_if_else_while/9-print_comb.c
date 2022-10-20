@@ -10,9 +10,10 @@ int main(void)
 {
 	int n;
 
-	for (n = 0 ; n <= 8 ; n++)
+	for (n = 0; n <= 8; n++){
 		putchar (n % 10 + '0');
 		putchar (" ,");
+	}	
 	putchar (n % 9 + '0');	
 	putchar ('\n');
 
