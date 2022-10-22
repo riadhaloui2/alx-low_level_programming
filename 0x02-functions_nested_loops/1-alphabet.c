@@ -2,9 +2,7 @@
 
 
 /**
- * main - Entry point
- * Description: print if the number is positive or negative
- * Return: Always 0 (Success)
+ * print_alphabet - prints the alphabet 
  */
 
 void print_alphabet(void)
