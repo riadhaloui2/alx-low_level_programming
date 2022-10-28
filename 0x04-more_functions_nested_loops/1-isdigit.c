@@ -2,11 +2,11 @@
 
 /**
  * _isdigit - checks for characters that are digits
- * @c: character 
+ * @c: character
  * Return: 0 or 1
  */
 
- 
+
 
 
 
