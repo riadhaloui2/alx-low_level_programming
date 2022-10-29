@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 
 {
 
