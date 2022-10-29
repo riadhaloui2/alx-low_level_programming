@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 
-rray(int *a, int n)
+void print_array(int *a, int n)
 
 {
 
