@@ -7,7 +7,6 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
- 
 int factorial(int n)
 {
 	if (n < 0)
