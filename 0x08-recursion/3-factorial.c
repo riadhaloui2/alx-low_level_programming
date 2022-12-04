@@ -3,10 +3,11 @@
 /**
  * factorial - gets factorial of n
  * @n: integer
- * Description :get factorial of n
- * return: on success 1
- * on error -1 is returned
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
+
+ 
 int factorial(int n)
 {
 	if (n < 0)
