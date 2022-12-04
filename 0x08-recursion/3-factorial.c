@@ -8,7 +8,7 @@
  * return: on success 1
  * on error -1 is returned
  */
-int factorial(n)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
