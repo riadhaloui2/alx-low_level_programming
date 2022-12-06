@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 
+
 /**
  * main - Entry point
  * @argc: Counts the number of parameters that go into main
@@ -10,28 +11,37 @@
  * Return: Always 0 (Success)
  */
 
+
 int main(int argc, char **argv)
 
 {
 
-	int i;
+	int n, ex;
 
 
 
-	if (argc > 0)
+	ex = 0;
+
+	if (argc != 3)
 
 	{
 
-		for (i = 0; i < argc; i++)
+		printf("%s\n", "Error");
 
-		{
-
-			printf("%s\n", argv[i]);
-
-		}
+		ex = 1;
 
 	}
 
-	return (0);
+	else
+
+	{
+
+		n = atoi(argv[1]) * atoi(argv[2]);
+
+		printf("%i\n", n);
+
+	}
+
+	return (ex);
 
 }
