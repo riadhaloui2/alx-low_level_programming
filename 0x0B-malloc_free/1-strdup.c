@@ -1,7 +1,5 @@
-#include "notrebloh.h"
-
+#include "main.h"
 #include <stdlib.h>
-
 #include <stdio.h>
 
 
@@ -17,14 +15,9 @@ int _strlen(char *s)
 {
 
 	int a;
-
-
-
 	for (a = 0; s[a] != '\0'; a++)
 
 	{
-
-
 
 	}
 
@@ -72,17 +65,11 @@ char *_strdup(char *str)
 	while (x < size)
 
 	{
-
 		if (ptr == NULL)
-
 		{
-
 			return (NULL);
-
 	}
-
 		ptr[x] = str[x];
-
 		x++;
 
 	}
