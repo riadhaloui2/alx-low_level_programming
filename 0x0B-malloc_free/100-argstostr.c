@@ -12,62 +12,66 @@
  * Return: arguments as strings
  */
 
-
 char *argstostr(int ac, char **av)
 
 {
-	int size, count, count1, count2 = 0;
-	char *ptr;
 
-	if (ac == 0 || av == NULL)
-	{
-		return (NULL);
-	}
+	char *s;
 
-	for (count = 0; count < ac; count++)
-	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
-		{
-
-			size += 1;
-
-		}
-
-		size += 1;
-
-	}
-
-	size += 1;
+	int a, b, c, d;
 
 
 
-	ptr = malloc(sizeof(char) * size);
-
-	if (ptr == NULL)
-
-	{
-
-		free(ptr);
+	if (ac == 0)
 
 		return (NULL);
 
-	}
+	if (av == 0)
 
-	for (count = 0; count < ac; count++)
+		return (NULL);
+
+	a = 0;
+
+	for (b = 0; b < ac; b++)
 
 	{
 
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
-		{
-			ptr[count2] = av[count][count1];
-			count2++;
-		}
-		ptr[count2] = '\n';
-		count2++;
+		for (c = 0; av[b][c] != '\0'; c++)
+
+			a++;
+
+		a++;
 
 	}
 
-	ptr[count2] = '\0';
-	return (ptr);
+	a++;
+
+	s = malloc(a * sizeof(char));
+
+	if (s == 0)
+
+		return (NULL);
+
+	d = 0;
+
+	for (b = 0; b < ac; b++)
+
+	{
+
+		for (c = 0; av[b][c] != '\0'; c++)
+
+		{
+
+			s[d++] = av[b][c];
+
+		}
+
+		s[d++] = '\n';
+
+	}
+
+	s[d] = '\0';
+
+	return (s);
 
 }
