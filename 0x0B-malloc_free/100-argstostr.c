@@ -5,17 +5,12 @@
 
 
 
-
+/**
  * *argstostr - convert arguments on command line to strings
-
  * @ac: int type
-
  * @av: pointer to array
-
  * Return: arguments as strings
-
  */
-
 
 
 char *argstostr(int ac, char **av)
