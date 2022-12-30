@@ -1,7 +1,5 @@
 #include "main.h"
-
 #include <stdio.h>
-
 #include <stdlib.h>
 
 
@@ -13,9 +11,7 @@
  */
 
 int number(char *str)
-
 {
-
 	int a, num = 0;
 
 	for (a = 0; str[a] != '\0'; a++)
@@ -36,23 +32,18 @@ int number(char *str)
  * @string: pointer values being passed for freeing
  * @i: counter
  */
-
 void free_everything(char **string, int i)
-
 {
 	for (; i > 0;)
 		free(string[--i]);
 	free(string);
 }
-
 /**
  * strtow - function that splits string into words
  * @str: string being passed
  * Return: null if string is empty or null or function fails
  */
-
 char **strtow(char *str)
-
 {
 	int total_words = 0, b = 0, c = 0, length = 0;
 	char **words, *found_word;
@@ -90,9 +81,10 @@ char **strtow(char *str)
 				c++;
 			}
 			words[b][c] = '\0';
-			b++; c = 0;
-		       	length = 0;
-		       	str++;
+			b++;
+			c = 0;
+			length = 0;
+			str++;
 		}
 	}
 	return (words);
