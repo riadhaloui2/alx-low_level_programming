@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 
-/*
- * _calloc - allocates memory for an array
+/**
+ * _calloc - print 0s into 2D grid
+ *
  * @nmemb: the number of elements
  * @size: the size of that element type
+ *
  * Return: A pointer to the allocated memeory. NULL if nmemb or size is 0.
  */
 
