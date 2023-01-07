@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -13,31 +12,29 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *dest, *src;
+	char *ar;
+	char *oldar = ptr;
 	unsigned int i;
 
-	if (new_size == old_size)
+	if (old_size == new_size)
 		return (ptr);
 	if (ptr == NULL)
 	{
-		ptr = malloc(new_size);
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		return (ptr);
+
+		ar = malloc(new_size);
+		return (ar);
 	}
-	if (new_size == 0 && ptr != NULL)
+	if (new_size == 0)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	dest = malloc(new_size);
-	if (dest == NULL)
+	ar = malloc(new_size);
+	if (ar == NULL)
 		return (NULL);
-	src = ptr;
-	for (i = 0; i < new_size && i < old_size; i++)
-		dest[i] = src[i];
-	free(ptr);
-	return (dest);
+	for (i = 0; i < old_size; i++)
+		ar[i] = oldar[i];
+	free(oldar);
+	return (ar);
 }
+
